@@ -1,20 +1,20 @@
 // script.js
 
-console.log("Zerith Security Premium aktif.");
+console.log("Zerith Security Premium Loaded");
 
-const commands = document.querySelectorAll(".cmd");
+const cards = document.querySelectorAll(".feature-card");
 
-commands.forEach(cmd => {
+cards.forEach(card => {
 
-  cmd.addEventListener("mouseenter", () => {
+  card.addEventListener("mousemove", () => {
 
-    cmd.style.transform = "scale(1.08)";
+    card.style.transform = "translateY(-10px)";
 
   });
 
-  cmd.addEventListener("mouseleave", () => {
+  card.addEventListener("mouseleave", () => {
 
-    cmd.style.transform = "scale(1)";
+    card.style.transform = "translateY(0px)";
 
   });
 
